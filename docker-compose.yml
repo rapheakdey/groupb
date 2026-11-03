@@ -1,11 +1,11 @@
-name: na_system_b
+name: groupb
 
 services:
   admin:
     build: 
       context: ./admin
       dockerfile: Dockerfile
-    container_name: na_system_b_admin_Pheakdey
+    container_name: groupb_admin_Pheakdey
     ports:
       - "9098:80"
 
@@ -13,6 +13,6 @@ services:
     build: 
       context: ./client
       dockerfile: Dockerfile
-    container_name: na_system_b_client_KdeyClor
+    container_name: groupb_client_Pheakdey
     ports:
       - "9099:80"
