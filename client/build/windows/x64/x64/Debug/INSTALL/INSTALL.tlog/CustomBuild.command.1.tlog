@@ -1,0 +1,10 @@
+^C:\USERS\TUF\ONEDRIVE\DESKTOP\GROUPB\CLIENT\BUILD\WINDOWS\X64\CMAKEFILES\85A539D8FD5EEC0953583560E111E0EC\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
