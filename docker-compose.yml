@@ -5,7 +5,7 @@ services:
     build: 
       context: ./admin
       dockerfile: Dockerfile
-    container_name: groupb_admin_Pheakdey
+    container_name: groupb_admin_Pheakdey 
     ports:
       - "9098:80"
 
